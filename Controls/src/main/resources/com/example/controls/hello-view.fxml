@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.String?>
+<GridPane fx:controller="com.example.controls.HelloController"
+          alignment="center" xmlns:fx="http://javafx.com/fxml" hgap="10" vgap="10">
+    <Button text="button" GridPane.rowIndex="0" GridPane.columnIndex="0">
+<!--        <graphic>-->
+<!--            <ImageView>-->
+<!--                <Image url=""/>-->
+<!--            </ImageView>-->
+<!--        </graphic>-->
+    </Button>
+
+    <Label GridPane.columnIndex="1" text="LabelLabelLabelLabelLabelLabelLabel" textFill="blue">
+        <font>
+            <Font name="Arial itelic" size="12"/>
+        </font>
+<!--        <graphic>-->
+<!--            <ImageView>-->
+<!--                <Image url=""/>-->
+<!--            </ImageView>-->
+<!--        </graphic>-->
+    </Label>
+
+    <fx:define>
+        <ToggleGroup fx:id="radioBtnGroup"/>
+    </fx:define>
+
+    <VBox GridPane.rowIndex="1" GridPane.columnIndex="2">
+        <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="2" text="red" toggleGroup="$radioBtnGroup"/>
+        <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="3" text="blue" toggleGroup="$radioBtnGroup" selected="true"/>
+        <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="4" text="green" toggleGroup="$radioBtnGroup"/>
+    </VBox>
+
+    <VBox GridPane.rowIndex="3">
+        <CheckBox text="agree to the terms and conditions"  GridPane.columnIndex="0" indeterminate="true"/>
+        <CheckBox text="agree to the terms and conditions"  GridPane.columnIndex="1" indeterminate="true"/>
+        <CheckBox text="agree to the terms and conditions"  GridPane.columnIndex="2" indeterminate="true"/>
+        <CheckBox text="agree to the terms and conditions"  GridPane.columnIndex="3" indeterminate="true"/>
+    </VBox>
+
+    <HBox GridPane.rowIndex="4">
+        <ToggleButton text="button" toggleGroup="$radioBtnGroup" />
+        <ToggleButton text="button" toggleGroup="$radioBtnGroup" />
+        <ToggleButton text="button" toggleGroup="$radioBtnGroup" />
+    </HBox>
+
+    <TextField GridPane.rowIndex="1"/>
+    <PasswordField GridPane.rowIndex="2"/>
+
+    <ComboBox GridPane.rowIndex="5" GridPane.columnSpan="2">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Option1"/>
+                <String fx:value="Option2"/>
+                <String fx:value="Option3"/>
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="Option1"/>
+        </value>
+    </ComboBox>
+
+    <ChoiceBox GridPane.rowIndex="6">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Choice1"/>
+                <String fx:value="Choice2"/>
+                <String fx:value="Choice3"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+
+</GridPane>
+
+<!--<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"-->
+<!--      fx:controller="com.example.controls.HelloController">-->
+<!--    <padding>-->
+<!--        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>-->
+<!--    </padding>-->
+
+<!--    <Label fx:id="welcomeText"/>-->
+<!--    <Button text="Hello!" onAction="#onHelloButtonClick"/>-->
+<!--</VBox>-->

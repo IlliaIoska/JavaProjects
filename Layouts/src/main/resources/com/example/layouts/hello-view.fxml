@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.FlowPane?>
+<FlowPane fx:controller="com.example.layouts.HelloController"
+          xmlns:fx="http://javafx.com/fxml" orientation="vertical">
+    <Button text="Button"/>
+    <Button text="Button"/>
+    <Button text="Button"/>
+    <Button text="Button"/>
+    <Button text="Button"/>
+    <Button text="Button"/>
+    <Button text="Button"/>
+    <Button text="Button"/>
+    <Button text="Button"/>
+    <Button text="Button"/>
+
+</FlowPane>
+<!--<BorderPane fx:controller="com.example.layouts.HelloController"-->
+<!--            xmlns:fx="http://javafx.com/fxml">-->
+<!--    <top>-->
+<!--        <Label text="This label is in the top position"-->
+<!--        style="-fx-border-color:black; -fx-border-width: 2px; -fx-border-style: solid;"-->
+<!--        BorderPane.alignment="center"/>-->
+<!--    </top>-->
+
+<!--    <left>-->
+<!--        <Label text="This label is in the left position" alignment="CENTER" BorderPane.alignment="center"/>-->
+<!--    </left>-->
+
+<!--    <right>-->
+<!--        <Label text="This label is in the right position" alignment="center"/>-->
+<!--    </right>-->
+
+<!--    <center>-->
+<!--        <Label text="This label is in the center position" alignment="center"/>-->
+<!--    </center>-->
+
+<!--    <bottom>-->
+<!--        <HBox spacing="10" alignment="top_right">-->
+<!--            <padding>-->
+<!--                <Insets bottom="10" right="10"/>-->
+<!--            </padding>-->
+<!--            <Button text="OK"/>-->
+<!--            <Button text="Cancel"/>-->
+<!--            <Button text="Help"/>-->
+<!--        </HBox>-->
+<!--    </bottom>-->
+
+<!--</BorderPane>-->
+
+
+<!--<?import javafx.scene.control.Button?>-->
+<!--<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"-->
+<!--      fx:controller="com.example.layouts.HelloController">-->
+<!--    <padding>-->
+<!--        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>-->
+<!--    </padding>-->
+
+<!--    <Label fx:id="welcomeText"/>-->
+<!--    <Button text="Hello!" onAction="#onHelloButtonClick"/>-->
+<!--</VBox>-->

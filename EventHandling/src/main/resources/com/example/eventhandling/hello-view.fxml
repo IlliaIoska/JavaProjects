@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.eventhandling.HelloController">
+    <TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="0" onKeyReleased="#onKeyReleased"/>
+    <Button fx:id="helloBtn" text="Hello!" GridPane.rowIndex="1" GridPane.columnIndex="0" onAction="#onButtonCLicked"/>
+    <Button fx:id="anotherBtn" text="Another" GridPane.columnIndex="1" GridPane.rowIndex="1" onAction="#onButtonCLicked"/>
+    <CheckBox fx:id="checkBox" text="clear" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2"
+    onAction="#onCheckBox"/>
+    <Label fx:id="label" text="empty" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+</GridPane>
